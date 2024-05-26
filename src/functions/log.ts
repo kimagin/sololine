@@ -1,7 +1,7 @@
 type LogLevel = 'log' | 'info' | 'warn' | 'error'
 
 interface LogOptions {
-  label?: string
+  label?: string | number | boolean
   level?: LogLevel
   time?: boolean
 }
@@ -28,7 +28,10 @@ interface LogOptions {
  * @param {boolean} [options.time=false] - Whether to include a timestamp in the log message.
  * @returns {void}
  */
-export function log(content: string, options: LogOptions = {}): void {
+export function log(
+  content: string | number | boolean,
+  options: LogOptions = {}
+): void {
   const { level = 'log', label = '', time = false } = options
   const timestamp = time ? new Date().toLocaleTimeString() : ''
   const logMessage = `${timestamp} ${label && `[${label}]`} ${content}`.trim()
