@@ -1,9 +1,12 @@
 /**
+ *
+ * ---
+ * **Description:**
  * Slugifies a given string by converting it to lowercase,
  * replacing spaces with hyphens (-), removing non-word characters,
  * and trimming leading/trailing hyphens.
- *
- * Example usage:
+ * ---
+ * **Example usage:**
  * ```js
  * const originalText = "Hello World";
  * const slugifiedText = slugify(originalText);
