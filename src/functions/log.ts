@@ -10,8 +10,8 @@ interface LogOptions {
  *
  * ---
  * **Description:**
- * Logs a message with optional label, level, and timestamp.
- * ---
+ * *Logs a message with optional label, level, and timestamp.*
+ *
  * **Example usage:**
  * ```js
  * const originalText = "Hello World";
@@ -21,11 +21,11 @@ interface LogOptions {
  * ```
  * ---
  *
- * @param {string} content - The content of the log message.
- * @param {LogOptions} [options] - Options for logging.
- * @param {string} [options.label] - A string label for the log message.
- * @param {LogLevel} [options.level] - The level of the log message (log, info, warn, or error).
- * @param {boolean} [options.time=false] - Whether to include a timestamp in the log message.
+ * @param {string} content *input: the content of the log message.*
+ * @param {LogOptions} [options] **Options :**
+ * - **label:** A string label for the log message.
+ * - **level:** The level of the log message (log, info, warn, or error).
+ * - **time:** Whether to include a timestamp in the log message.
  * @returns {void}
  */
 export function log(

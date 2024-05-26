@@ -1,1 +1,1 @@
-import { _isEmail, _log, _random, _slugify } from './functions/utils'
+import { _isEmail, _log, _random, _repeat, _slugify } from './functions/utils'

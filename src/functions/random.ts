@@ -10,8 +10,8 @@ export interface Options {
  *
  * ---
  * **Description:**
- * Generates a random number within a specified range, with options for output type and mirroring.
- * ---
+ * *Generates a random number within a specified range, with options for output type and mirroring.*
+ *
  * **Example usage:**
  * ```js
  * // Random integer between -300 and 300
@@ -25,12 +25,12 @@ export interface Options {
  * ```
  * ---
  *
- * @param {number} max - The maximum value for the random number range.
- * @param {Options} [options] Options for random number generation:
- * - min: The minimum value for the random number range.
- * - mirror: Whether to mirror the max value to create a range from -max to max.
- * - float: Whether the output should be a floating-point number.
- * - percision: The number of decimal places for the floating-point output.
+ * @param {number} max *input: the maximum value for the random number range.*
+ * @param {Options} [options] **Options :**
+ * - **min:** The minimum value for the random number range.
+ * - **mirror:** Whether to mirror the max value to create a range from -max to max.
+ * - **float:** Whether the output should be a floating-point number.
+ * - **percision:** The number of decimal places for the floating-point output.
  *
  * @returns {number} - The generated random number.
  */
