@@ -1,14 +1,27 @@
 {
   "name": "sololine",
-  "private": true,
-  "version": "0.0.1",
-  "type": "module",
+  "version": "0.1.8",
+  "description": "A comprehensive utility library for JavaScript",
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsup"
   },
   "devDependencies": {
+    "tsup": "^8.1.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   }

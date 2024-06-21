@@ -1,0 +1,8 @@
+src
+index.html
+public
+tests
+tsconfig.json
+tsup.config.ts
+vite.config.ts
+.gitignore
