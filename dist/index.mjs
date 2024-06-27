@@ -1,28 +1,3 @@
-import "./chunk-ZEYQLOQU.mjs";
-import {
-  slugify
-} from "./chunk-36U5VP3P.mjs";
-import {
-  isEmail
-} from "./chunk-HKTHGUS4.mjs";
-import {
-  log
-} from "./chunk-S4EO2IUZ.mjs";
-import {
-  pause
-} from "./chunk-M4IUXYCQ.mjs";
-import {
-  random
-} from "./chunk-ODH3232T.mjs";
-import {
-  repeat
-} from "./chunk-YTDLCTD3.mjs";
-export {
-  isEmail as _isEmail,
-  log as _log,
-  pause as _pause,
-  random as _random,
-  repeat as _repeat,
-  slugify as _slugify
-};
-//# sourceMappingURL=index.mjs.map
+function g(e){return e.toString().toLowerCase().replace(/\s+/g,"-").replace(/[^\w-]+/g,"").replace(/\-\-+/g,"-").replace(/^[-_]+/,"").replace(/[-_]+$/,"")}function b(e){return new Promise((t,r)=>{setTimeout(()=>{try{t();}catch(o){r(o);}},e);})}function d(e){return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(e)}function v(e,t={}){let{level:r="log",label:o="",time:l=!1}=t,n=`${l?new Date().toLocaleTimeString():""} ${o&&`[${o}]`} ${e}`.trim(),i={log:{method:console.log,color:"#A9A9A9"},info:{method:console.info,color:"#12b85b"},warn:{method:console.warn,color:"#FFD700"},error:{method:console.error,color:"#FFA07A"}},{method:c,color:u}=i[r],p=`color: ${u}; font-weight: bold; font-style: italic;`;c(`%c${n}`,p);}function x(e,t={}){let{min:r=0,float:o=!1,mirror:l=!1,percision:m=10}=t,n=l?-e:r,i=e-n;return o?parseFloat((Math.random()*i+n).toFixed(m)):Math.floor(Math.random()*i+n)}async function F(e,t={}){let{timeout:r,interval:o=1,exitFunction:l}=t;return new Promise(m=>{let n=performance.now(),i,c=p=>{let f=p-n;f>=o&&(e(),n=p-f%o),i=requestAnimationFrame(c);};r&&setTimeout(()=>{cancelAnimationFrame(i),l&&l(),m();},r),i=requestAnimationFrame(c);})}
+
+export { d as _isEmail, v as _log, b as _pause, x as _random, F as _repeat, g as _slugify };

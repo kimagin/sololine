@@ -4,8 +4,9 @@ export default defineConfig({
   entry: ['src'],
   target: 'es2020',
   format: ['cjs', 'esm'],
-  splitting: true,
-  sourcemap: true,
+  splitting: false,
+  sourcemap: false,
+  shims: true,
   clean: true,
   dts: true,
 })

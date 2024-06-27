@@ -1,7 +1,5 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true});
+'use strict';
 
-var _chunkEOIF5D66js = require('../chunk-EOIF5D66.js');
+function i(e){return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(e)}
 
-
-exports.isEmail = _chunkEOIF5D66js.isEmail;
-//# sourceMappingURL=email-validation.js.map
+exports.isEmail = i;

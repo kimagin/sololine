@@ -1,28 +1,10 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true});require('./chunk-RAMFXHHV.js');
+'use strict';
 
+function f(e){return e.toString().toLowerCase().replace(/\s+/g,"-").replace(/[^\w-]+/g,"").replace(/\-\-+/g,"-").replace(/^[-_]+/,"").replace(/[-_]+$/,"")}function g(e){return new Promise((t,r)=>{setTimeout(()=>{try{t();}catch(o){r(o);}},e);})}function b(e){return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(e)}function d(e,t={}){let{level:r="log",label:o="",time:s=!1}=t,n=`${s?new Date().toLocaleTimeString():""} ${o&&`[${o}]`} ${e}`.trim(),i={log:{method:console.log,color:"#A9A9A9"},info:{method:console.info,color:"#12b85b"},warn:{method:console.warn,color:"#FFD700"},error:{method:console.error,color:"#FFA07A"}},{method:m,color:p}=i[r],c=`color: ${p}; font-weight: bold; font-style: italic;`;m(`%c${n}`,c);}function v(e,t={}){let{min:r=0,float:o=!1,mirror:s=!1,percision:l=10}=t,n=s?-e:r,i=e-n;return o?parseFloat((Math.random()*i+n).toFixed(l)):Math.floor(Math.random()*i+n)}async function x(e,t={}){let{timeout:r,interval:o=1,exitFunction:s}=t;return new Promise(l=>{let n=performance.now(),i,m=c=>{let u=c-n;u>=o&&(e(),n=c-u%o),i=requestAnimationFrame(m);};r&&setTimeout(()=>{cancelAnimationFrame(i),s&&s(),l();},r),i=requestAnimationFrame(m);})}
 
-var _chunkXYRSQ65Hjs = require('./chunk-XYRSQ65H.js');
-
-
-var _chunkEOIF5D66js = require('./chunk-EOIF5D66.js');
-
-
-var _chunk25TIQ2CPjs = require('./chunk-25TIQ2CP.js');
-
-
-var _chunk2MU2LD3Yjs = require('./chunk-2MU2LD3Y.js');
-
-
-var _chunkPRZ24WONjs = require('./chunk-PRZ24WON.js');
-
-
-var _chunkASUBRVEAjs = require('./chunk-ASUBRVEA.js');
-
-
-
-
-
-
-
-exports._isEmail = _chunkEOIF5D66js.isEmail; exports._log = _chunk25TIQ2CPjs.log; exports._pause = _chunk2MU2LD3Yjs.pause; exports._random = _chunkPRZ24WONjs.random; exports._repeat = _chunkASUBRVEAjs.repeat; exports._slugify = _chunkXYRSQ65Hjs.slugify;
-//# sourceMappingURL=index.js.map
+exports._isEmail = b;
+exports._log = d;
+exports._pause = g;
+exports._random = v;
+exports._repeat = x;
+exports._slugify = f;

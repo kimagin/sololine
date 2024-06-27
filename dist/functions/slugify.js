@@ -1,7 +1,5 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true});
+'use strict';
 
-var _chunkXYRSQ65Hjs = require('../chunk-XYRSQ65H.js');
+function t(e){return e.toString().toLowerCase().replace(/\s+/g,"-").replace(/[^\w-]+/g,"").replace(/\-\-+/g,"-").replace(/^[-_]+/,"").replace(/[-_]+$/,"")}
 
-
-exports.slugify = _chunkXYRSQ65Hjs.slugify;
-//# sourceMappingURL=slugify.js.map
+exports.slugify = t;

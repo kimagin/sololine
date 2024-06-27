@@ -1,7 +1,5 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true});
+'use strict';
 
-var _chunk25TIQ2CPjs = require('../chunk-25TIQ2CP.js');
+function b(e,l={}){let{level:t="log",label:o="",time:n=!1}=l,r=`${n?new Date().toLocaleTimeString():""} ${o&&`[${o}]`} ${e}`.trim(),s={log:{method:console.log,color:"#A9A9A9"},info:{method:console.info,color:"#12b85b"},warn:{method:console.warn,color:"#FFD700"},error:{method:console.error,color:"#FFA07A"}},{method:c,color:i}=s[t],a=`color: ${i}; font-weight: bold; font-style: italic;`;c(`%c${r}`,a);}
 
-
-exports.log = _chunk25TIQ2CPjs.log;
-//# sourceMappingURL=log.js.map
+exports.log = b;

@@ -1,7 +1,3 @@
-import {
-  slugify
-} from "../chunk-36U5VP3P.mjs";
-export {
-  slugify
-};
-//# sourceMappingURL=slugify.mjs.map
+function g(e){return e.toString().toLowerCase().replace(/\s+/g,"-").replace(/[^\w-]+/g,"").replace(/\-\-+/g,"-").replace(/^[-_]+/,"").replace(/[-_]+$/,"")}
+
+export { g as slugify };

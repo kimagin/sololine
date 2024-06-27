@@ -1,7 +1,5 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true});
+'use strict';
 
-var _chunk2MU2LD3Yjs = require('../chunk-2MU2LD3Y.js');
+function n(e){return new Promise((r,o)=>{setTimeout(()=>{try{r();}catch(t){o(t);}},e);})}
 
-
-exports.pause = _chunk2MU2LD3Yjs.pause;
-//# sourceMappingURL=pause.js.map
+exports.pause = n;

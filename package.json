@@ -1,6 +1,6 @@
 {
   "name": "sololine",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A comprehensive utility library for JavaScript",
   "files": [
     "dist",
@@ -18,7 +18,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsup"
+    "build": "tsup --minify --treeshake"
   },
   "devDependencies": {
     "tsup": "^8.1.0",

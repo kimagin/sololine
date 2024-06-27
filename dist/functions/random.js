@@ -1,7 +1,5 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true});
+'use strict';
 
-var _chunkPRZ24WONjs = require('../chunk-PRZ24WON.js');
+function m(o,e={}){let{min:t=0,float:i=!1,mirror:a=!1,percision:s=10}=e,n=a?-o:t,r=o-n;return i?parseFloat((Math.random()*r+n).toFixed(s)):Math.floor(Math.random()*r+n)}
 
-
-exports.random = _chunkPRZ24WONjs.random;
-//# sourceMappingURL=random.js.map
+exports.random = m;
